@@ -12,7 +12,7 @@ body {
 header {
     z-index: 1;
     width: 100%;
-    height: 70px;
+    height: 50px;
     background-color: #111829;
     /* margin-top: 12px; */
     margin-left: 20px;
@@ -49,16 +49,22 @@ header {
     padding-bottom: 15.85px;
 }
 
-#navbar > ul {
+.ul-spacing {
     display: flex;
     flex-direction: row;
     padding-top: 7px;
+    width: 600px;
+    justify-content: space-between;
     /* margin-top: 24px; */
     color: rgb(19, 19, 41);
 }
 
-#navbar > ul > li {
-    margin-left: 62px;
+.ul-spacing-2 {
+    width: 400px;
+}
+
+.list {
+    display: flex;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -66,10 +72,9 @@ header {
     color: white;
     text-decoration: none;
     font-size: 16px;
-
 }
 
-li > a:hover {
+.list > a:hover {
     background-color:rgb(97, 107, 104);
     padding: 2px 8px 2px 8px;
     transition: 0.5s;
@@ -77,38 +82,37 @@ li > a:hover {
 }
 
 .navbar-right {
-    /* margin-top: 35px; */
+    margin-top: 5px;
     /* margin-left: 100px;
     justify-self: end; */
     /* position: fixed; */
     /* align-items: center; */
     /* padding-top: 7px; */
-     display: flex;
+    display: flex;
     justify-content: space-between;
- } 
+ }
 
-.navbar-right li {
-    text-decoration: none;
+.r-1-li {
+    margin-top: 5px;
+    padding-bottom: 3px;
 }
-
-/* .navbar-right li:nth-of-type(2) {
-     margin-top: -10px; 
-    background-color: rgb(97, 107, 104);
-    padding: 10px 7px 10px 7px;
-    text-align: center;
-    border-radius: 5px;
-    font-size: 12px;
-} */
 
 #trial {
     background-color: rgb(97, 107, 104);
     color: white;
     text-decoration: none;
-     /* background-color: rgb(97, 107, 104); */
+    margin-right: 40px;
     padding: 10px 7px 10px 7px;
     text-align: center;
     border-radius: 5px;
     font-size: 12px;
+}
+
+#trial:hover {
+    color:rgb(173, 180, 178);
+    /* padding: 12px 9px 12px 9px; */
+    transition: 0.5s;
+    border-radius: 5px;
 }
 
 
@@ -119,7 +123,7 @@ li > a:hover {
     align-items: center;
 }
 
-.hiring {
+.c-1 {
     display: flex;
     background-color:black;
     width: 247px;
@@ -128,7 +132,7 @@ li > a:hover {
     height: 28px;
 }
 
-.hiring p {
+.hiring{
   color: white;
   background:linear-gradient(90.6deg, #13B4A7 18.38%, rgba(16, 170, 170, 0.689722) 51.22%, #0893B0 83.27%);
   padding: 3px 10px 3px 10px;
@@ -163,18 +167,18 @@ li > a:hover {
     transition: 0.5s;
 }
 
-.bold-text h1 {
+.bold-text {
     color: white;
     font-size: 60px;
     margin-left: 20px;
 }
 
-.bold-text > h1 > span {
+.span-right {
     color:rgb(12, 184, 184);
     display: block;
 }
 
-.desc p {
+.c-3 p {
     color: white;
     margin-left: 20px;
     width: 80%;
@@ -182,7 +186,7 @@ li > a:hover {
     font-size: 16px;
 }
 
-.input {
+.c-4 {
     display: grid;
     grid-template-columns: 1.5fr 0.5fr;
 }
@@ -200,9 +204,9 @@ button {
     margin-bottom: 0px;
 }
 
-.main-right {
-    /* margin-top: ; */
-}
+/* .main-right {
+    margin-top: ;
+} */
 
 #hero-img {
     width: 680px;
