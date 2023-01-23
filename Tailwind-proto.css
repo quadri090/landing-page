@@ -4,7 +4,7 @@
 }
 
 body {
-    width: 100%;
+    width: 99%;
     height: 100%;
     background-color: #111829;
 }
@@ -72,6 +72,7 @@ header {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    position: fixed;
 }
 
 .list > a:hover {
@@ -101,11 +102,13 @@ header {
     background-color: rgb(97, 107, 104);
     color: white;
     text-decoration: none;
-    margin-right: 40px;
-    padding: 10px 7px 10px 7px;
+    margin-right: 50px;
+    padding: 12.5px 24px 12.5px 24px;
     text-align: center;
     border-radius: 5px;
     font-size: 12px;
+    font-family: roboto;
+    font-weight: 400;
 }
 
 #trial:hover {
@@ -116,34 +119,39 @@ header {
 }
 
 
-.container {
+.wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 79px;
+    /* margin-top: 0px 20px 0px 20px; */
     align-items: center;
 }
 
-.c-1 {
+.main-left {
+    margin-top: 238px;
+}
+
+.container-1   {
     display: flex;
     background-color:black;
     width: 247px;
-    border-radius: 30px;
-    margin: 67px 20px 20px 20px;
+    border-radius: 20px;
+    margin: 0px 20px 14px 20px;
     height: 28px;
+    align-items: center;
+    justify-content: center; 
 }
 
 .hiring{
   color: white;
   background:linear-gradient(90.6deg, #13B4A7 18.38%, rgba(16, 170, 170, 0.689722) 51.22%, #0893B0 83.27%);
   padding: 3px 10px 3px 10px;
-  margin: 4px;
+  margin: 4px 4px 4px -30px;
   border-radius: 20px;
   font-size: 12px;
-  align-self: center;
-  width: 84px;
+  width: 64px;
+  height: 14px;
   font-family: roboto;
-  font-weight: 700;
-
+  font-weight: 400;
 }
 
 #careers {
@@ -154,12 +162,16 @@ header {
     margin-left: 5px;
     font-family: roboto;
     font-size: 12px;
+    font-weight: 400;
 }
 
 .fa-chevron-right {
+    width: 5.25px;
+    height: 10.5px;
+    position: absolute;
     align-self: center;
     margin-left: 6.75px;
-    margin-top: 3.75px;
+    margin-top: 2px;
 }
 
 #careers:hover {
@@ -170,7 +182,11 @@ header {
 .bold-text {
     color: white;
     font-size: 60px;
-    margin-left: 20px;
+    margin: 0px 0px 0px 20px;
+    line-height: 60px;
+    padding-bottom: ;
+    width: 450px;
+    height: 143px;
 }
 
 .span-right {
@@ -178,50 +194,62 @@ header {
     display: block;
 }
 
-.c-3 p {
+.container-3 p {
     color: white;
-    margin-left: 20px;
-    width: 80%;
+    margin: 14px 110px 57px 20px;
+    width: 450px;
+    height: 96px;
     font-weight: 400;
     font-size: 16px;
+    line-height: 30px;
 }
 
-.c-4 {
-    display: grid;
-    grid-template-columns: 1.5fr 0.5fr;
+.container-4 {
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: 1.5fr 0.5fr; */
 }
 
-input, button {
+input {
     background-color: aliceblue;
-    margin-left: 20px;
-    border-radius: 5px;
-    padding: 10px;
+    margin: 0px 15px 57px 20px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    width: 363px;
+    height: 25px;
 }
 
 button {
     background-color: rgb(97, 107, 104);
+    width: 127px;
+    height: 42px;
+    justify-content: center;
+    border-radius: 4px;
+    margin: 0px 55px 57px 0px;
     color: white;
-    margin-bottom: 0px;
+    font-size: 16px;
 }
 
 /* .main-right {
-    margin-top: ;
+    margin-top: 171px;
 } */
 
 #hero-img {
     width: 680px;
     height: 611px;
-    /* align-self: ; */
+    align-self: center;
     right: 20px;
+    margin: 171px 0px 50px 20px;
 }
 
 #start {
-    margin-top: 57px;
-    margin-bottom: 126px;
+    margin: 0px 0px 126px 20px;
     font-size: 12px;
     font-weight: 400;
     color:#54E1EA;
-    margin-left: 20px;
+    font-family: 'roboto', 'sans-serif';
+    line-height: 14px;
+    font-style: normal;
 }
 
 #terms {
